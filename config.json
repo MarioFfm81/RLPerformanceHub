@@ -1,0 +1,51 @@
+{
+    "experiment_name": "Random_Seed_experiment",
+    "random_seeds": [
+        2490,
+        74850,
+        142716,
+        144841,
+        152599,
+        194870,
+        226177,
+        251854,
+        252821,
+        258624,
+        289028,
+        294784,
+        348867,
+        376858,
+        386019,
+        433462,
+        467644,
+        507971,
+        514847,
+        566206,
+        570175,
+        599766,
+        679840,
+        767111,
+        862747,
+        873728,
+        880001,
+        940593,
+        974402,
+        994822
+    ],
+    "algorithms": [
+        "TD3"
+    ],
+    "environments": {
+        "InvertedPendulum-v4": {
+            "env": "InvertedPendulum-v4",
+            "metric": "episode_reward_mean",
+            "mode": "max",
+            "stop_criteria_timesteps": {
+                "PPO": 2500000,
+                "SAC": 75000,
+                "DDPG": 100000,
+                "TD3": 200000
+            }
+        }
+    }
+}
